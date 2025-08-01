@@ -2,9 +2,38 @@
 
 This repository contains precompiled Milesight NX `.so` plugin libraries and an auto-updater script for Linux systems.
 
-
+---
 
 ## 4️⃣ Install on Your Linux System
+
+Before cloning, make sure **Git is installed** on your server.
+
+### Install Git (if missing)
+- **Ubuntu / Debian:**
+```bash
+sudo apt update
+sudo apt install git -y
+```
+- **CentOS / Fedora:**
+```bash
+sudo yum install git -y
+```
+or
+```bash
+sudo dnf install git -y
+```
+- **OpenSUSE:**
+```bash
+sudo zypper install git
+```
+- **Verify installation:**
+```bash
+git --version
+```
+
+---
+
+### Clone and Run Updater
 
 On the target server:
 ```bash
@@ -52,4 +81,3 @@ The new files will overwrite old ones and NX Witness will restart automatically 
 ## Notes
 - Default install path for plugins is `/usr/lib/milesight-nx`. Edit `update_plugin.sh` to change.
 - The script auto-restarts `networkoptix-mediaserver` if it’s active.
-
