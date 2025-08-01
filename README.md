@@ -9,7 +9,7 @@ This repository contains precompiled Milesight NX `.so` plugin libraries and an 
 On the target server:
 ```bash
 cd /opt
-sudo git clone https://github.com/YOUR-USERNAME/milesight-nx-plugin-updater.git
+sudo git clone https://github.com/SyncLostFound/milesight-nx-plugin-updater.git
 sudo chmod +x /opt/milesight-nx-plugin-updater/update_plugin.sh
 sudo /opt/milesight-nx-plugin-updater/update_plugin.sh
 ```
